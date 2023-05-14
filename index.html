@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+</head>
+<body>
+    <style>
+        header{
+            text-align: center;
+            font-size: 40px;
+        }
+    
+        #container{
+            background-color: red;
+            width:1000px;
+            height:500px;
+            border-radius:50px;
+            text-align: center;
+            margin:auto;
+        }
+
+        #captain{
+            transition: 1s;
+            z-index:3;
+        }
+
+        #text{
+            height:500px;
+            width:500px;
+            font-size:30px;
+            top:200px;
+            opacity:0%;
+            transition:1s;
+            z-index:0;
+            color:white;
+            position:absolute;
+            
+        }
+
+        #btn{
+            height:100px;
+            width:200px;
+            font-size:30px;
+            top:500px;
+            opacity:0%;
+            transition:1s;
+            z-index:0;
+            background-color:white;
+            position:absolute;
+            
+        }
+
+        #container:hover #captain{
+            transform: translate(100px);
+        }
+
+        #container:hover #text{
+            opacity:100%;
+        }
+
+        #container:hover #btn{
+            opacity:100%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1>Captain Marvel</h1>
+
+    </header>
+
+    <div id="container">
+        <img id="captain" src="./cm.png">
+        <p id="text">Captian Marvel, "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam modi adipisci aliquid dolore excepturi nulla, cum nobis commodi quis est enim possimus libero soluta labore magni eaque expedita, animi accusamus?"</p>
+        <button id="btn">More Information</button>
+    </div>
+</body>
+</html>
